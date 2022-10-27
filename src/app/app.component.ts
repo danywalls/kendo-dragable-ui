@@ -49,13 +49,13 @@ export class AppComponent {
 
   selectedStory: any;
 
-  public handlePress(section: any, story: any): void {
+  public handleRelease(section: any, story: any): void {
     this.selectedStory = story;
     section.stories = section.stories.filter((s: any) => s.id !== story.id);
   }
 
-  public handleDrop(section: any): void {
-    this.selectedStory.status = section.section.name;
-    section.section.stories.push(this.selectedStory);
+  public handleDrop(dropSection: any): void {
+    this.selectedStory.status = dropSection.name;
+    dropSection.stories.push(this.selectedStory);
   }
 }

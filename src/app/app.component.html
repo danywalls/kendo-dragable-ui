@@ -6,17 +6,16 @@
 
   <div class="flex">
   <div *ngFor="let section of scrum;"
-  class="stories"
+  class="section"
   kendoDropTarget
-  (drop)="handleDrop({section})"
+  (drop)="handleDrop(section)
+  "
   >
   <div >
     <span class="title">{{section.name}} ({{section.stories.length}})</span>
     <div
-
     kendoDragTarget class="story" *ngFor="let story of section.stories"
-    (release)="handlePress(section,story)"
-    >
+    (release)="handleRelease(section,story)">
       <span>{{ story.title }}</span>
       <span>{{ story.description }}</span>
       <span [ngClass]="story.status" class="status">{{ story.status }}</span>

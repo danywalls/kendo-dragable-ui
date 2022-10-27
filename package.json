@@ -19,7 +19,7 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "@progress/kendo-angular-common": "^3.2.1",
-    "@progress/kendo-angular-utils": "^0.1.1",
+
     "@progress/kendo-licensing": "^1.2.2",
     "@progress/kendo-theme-bootstrap": "^5.8.1",
     "rxjs": "~6.6.0",
